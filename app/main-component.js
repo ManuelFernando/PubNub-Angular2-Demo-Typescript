@@ -52,7 +52,6 @@ var MainComponent = (function () {
         core_1.Component({
             selector: 'main-component',
             templateUrl: 'app/template.html',
-            providers: [pubnub_angular2_1.PubNubAngular]
         }), 
         __metadata('design:paramtypes', [pubnub_angular2_1.PubNubAngular])
     ], MainComponent);

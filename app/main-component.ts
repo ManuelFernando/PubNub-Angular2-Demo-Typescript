@@ -4,7 +4,6 @@ import {PubNubAngular} from 'pubnub-angular2';
 @Component({
     selector: 'main-component',
     templateUrl: 'app/template.html',
-    providers: [PubNubAngular]
 })
 
 export class MainComponent {
@@ -52,7 +51,6 @@ export class MainComponent {
     }
 
     publish(){
-
         if (this.newMessage !== '') {
             this.pubnubService.publish({message: '[' + this.userId + '] ' + this.newMessage, channel: this.channelName});
             this.newMessage = '';
